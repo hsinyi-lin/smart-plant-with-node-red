@@ -1,0 +1,2178 @@
+[
+    {
+        "id": "5db642778b80666c",
+        "type": "tab",
+        "label": "盆栽",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6635dd69cdedd6a3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "https://broker.mqttgo.io/",
+        "port": "1883",
+        "clientid": "mqpub_jacobian",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2b164f091c51a230",
+        "type": "linetoken",
+        "name": "plant"
+    },
+    {
+        "id": "3858186c8d052173",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "0aa0e6cf8bc87dee",
+        "type": "ui_tab",
+        "name": "盆栽",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "72a3a8e19f3fc2d0",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 13
+    },
+    {
+        "id": "407c3509648783ec",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "31d50a344efd394a",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a743f8eb53fca60e",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "97d6f0d97930f465",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "0aa0e6cf8bc87dee",
+        "order": 1,
+        "disp": true,
+        "width": 30
+    },
+    {
+        "id": "89749fb7.87f01",
+        "type": "ui_group",
+        "name": "Charts",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "ab397e95.29ebe",
+        "type": "ui_group",
+        "name": "Inputs",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "4e7edda4.417004",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "",
+        "order": 3,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "351a3bc857d4e445",
+        "type": "linetoken",
+        "name": ""
+    },
+    {
+        "id": "330374145c0e454e",
+        "type": "linetoken",
+        "name": ""
+    },
+    {
+        "id": "2b0994ffb73424d3",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 30
+    },
+    {
+        "id": "e7d55c918d7aac61",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "https://broker.mqttgo.io/",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "74fd3042d9d740c0",
+        "type": "ui_group",
+        "name": "DEMO",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "88b47233a5a4f7b0",
+        "type": "ui_tab",
+        "name": "Maker",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "86fe58179a0ff60c",
+        "type": "ui_group",
+        "name": "user input",
+        "tab": "88b47233a5a4f7b0",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9f5eb1adbae057db",
+        "type": "ui_tab",
+        "name": "user input",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6cebf1f6e1c8ed24",
+        "type": "ui_group",
+        "name": "maker",
+        "tab": "88b47233a5a4f7b0",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3a04eb1adfae51e7",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "88b47233a5a4f7b0",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "8f424fd2a17b39c3",
+        "type": "ui_tab",
+        "name": "盆栽折線圖",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6b0aee54c2d10d97",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "8f424fd2a17b39c3",
+        "order": 1,
+        "disp": true,
+        "width": 30
+    },
+    {
+        "id": "5e96965a08a79c40",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "40f4ab0d25e4502d",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 4,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "f11fbc83f646bc9b",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "c03c80b033424539",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 6,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "b738329bb2e2a7c2",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f47b5daa2d704826",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 8,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "2e22133283274777",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f356f25501c7b4c9",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 10,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "0983e3d1accbe410",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6a903e3d5226e772",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 12,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "e704dc2c6dd5829f",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d8383e315769af6f",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 14,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "534541e073da63fd",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 15,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "ad9dff340a33c075",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 17,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "738e4f28bdecfa60",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 19,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "f23711e947f16519",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 20,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "880addaf46cdfe01",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 21,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "88a8a2e8b4dab9b7",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 22,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "4ab1b414106d5f86",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 23,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "9fabc3b51f8cd70f",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 24,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "eb98aca498fdc363",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 25,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "067b581877422a84",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 26,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "6ea7cba472f786ed",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 27,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "d3172feb6daefecf",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 28,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ddc309d1fc294981",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 29,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "2805767595eae1a4",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 30,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "85e00432e130b0c7",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 32,
+        "width": 21,
+        "height": 1
+    },
+    {
+        "id": "d646b42b66c38799",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 33,
+        "width": 21,
+        "height": 1
+    },
+    {
+        "id": "f33ef91ab6e10221",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 34,
+        "width": 21,
+        "height": 1
+    },
+    {
+        "id": "0d5b8bc41c532b4e",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 35,
+        "width": 21,
+        "height": 1
+    },
+    {
+        "id": "d34892c0fa01b1a7",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 36,
+        "width": 21,
+        "height": 1
+    },
+    {
+        "id": "26d4178c143aa63e",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "6b0aee54c2d10d97",
+        "order": 37,
+        "width": 21,
+        "height": 1
+    },
+    {
+        "id": "987dbaefdc124c11",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "0d37a645022df9a4",
+        "type": "ui_tab",
+        "name": "地圖",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9ad87b60da9b5a62",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "0d37a645022df9a4",
+        "order": 1,
+        "disp": true,
+        "width": 20
+    },
+    {
+        "id": "e739bc9917551fa8",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "0d37a645022df9a4",
+        "order": 2,
+        "disp": true,
+        "width": 20
+    },
+    {
+        "id": "69300d7c121ba60a",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 2,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "21ee91345b83a0f0",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 3,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "dd345519a474232e",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "01272643aac9c601",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 9,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "6e2d50cb61bdc1fe",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 10,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "de49bbbbe626dfc6",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 12,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "4b802a4853c53bef",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 16,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "6ca4dab7aaecaf94",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 19,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "08ef62496dc7563e",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 20,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "a6d216ef941951bf",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 21,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "d8eeb3039af8dfc7",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 22,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "a09b7d831f093953",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 23,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "e6c12e0bb74fd741",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 24,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "e21de08d033e4f23",
+        "type": "ui_spacer",
+        "z": "5db642778b80666c",
+        "name": "spacer",
+        "group": "97d6f0d97930f465",
+        "order": 25,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "36a12b6fecff130c",
+        "type": "inject",
+        "z": "5db642778b80666c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            [
+                "08a2e6e18486028c",
+                "2e9e48708754fb68"
+            ]
+        ]
+    },
+    {
+        "id": "54aba25c97a6aaf4",
+        "type": "json",
+        "z": "5db642778b80666c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 570,
+        "y": 60,
+        "wires": [
+            [
+                "508b0f375e7634b3"
+            ]
+        ]
+    },
+    {
+        "id": "508b0f375e7634b3",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "function 5",
+        "func": "// 获取JSON对象\nvar jsonPayload = msg.payload;\n\n// 检查是否有 records 和 location 数据\nif (jsonPayload && jsonPayload.records && jsonPayload.records.location) {\n    // 获取location数组\n    var locationArray = jsonPayload.records.location;\n\n    // 创建一个数组来存储每个 location 对象中的 Total 数据\n    var totalArray = [];\n\n    // 遍历 location 数组\n    locationArray.forEach(function (location) {\n        // 检查是否有 Precipitation 对象和 monthly 数组\n        if (location.stationObsStatistics && location.stationObsStatistics.Precipitation && location.stationObsStatistics.Precipitation.monthly) {\n            // 提取 monthly 数组中的 Total\n            var totalData = location.stationObsStatistics.Precipitation.monthly.map(function (item) {\n                return item.Total;\n            });\n\n            // 将 totalData 添加到数组中\n            totalArray.push(totalData);\n        } else {\n            // 如果找不到 Precipitation 的 monthly 数据，则显示错误消息\n            node.error(\"无法找到符合条件的 Precipitation 的 monthly 数据。\");\n        }\n    });\n\n    // 将 totalArray 存储在 msg 对象中\n    msg.payload = totalArray;\n\n    // 显示在 Debug 节点中\n    return msg;\n} else {\n    // 如果找不到 records 或 location 数据，则显示错误消息\n    node.error(\"无法找到位置数据。\");\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 60,
+        "wires": [
+            [
+                "e91d92320819531d"
+            ]
+        ]
+    },
+    {
+        "id": "e91d92320819531d",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "function 6",
+        "func": "// 获取JSON对象\nvar jsonPayload = msg.payload;\n\n// 检查是否有有效的 payload\n    // 创建一个数组来存储每个内部数组中的 Total 数据\n    var totalArray = [];\n\n    // 遍历 payload 数组\n    jsonPayload.forEach(function (innerArray) {\n        // 将内部数组中的字符串转换成数字，并添加到 totalArray 中\n        var numericArray = innerArray.map(function (value) {\n            return parseFloat(value);\n        });\n\n        // 将 numericArray 添加到数组中\n        totalArray.push(numericArray);\n    });\n\n    // 将 totalArray 存储在 msg 对象中\n    msg.payload = totalArray;\n\n    // 显示在 Debug 节点中\n    return msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 60,
+        "wires": [
+            [
+                "2bfb3c36d5ef1129"
+            ]
+        ]
+    },
+    {
+        "id": "2bfb3c36d5ef1129",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "function 7",
+        "func": "var m = {};\nm.labels = [\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"10\", \"11\", \"12\"];\nm.series = ['月份'];\nm.data = msg.payload;\nreturn { payload: [m] };",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 60,
+        "wires": [
+            [
+                "c7e5e115b4566d58"
+            ]
+        ]
+    },
+    {
+        "id": "c7e5e115b4566d58",
+        "type": "ui_chart",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "97d6f0d97930f465",
+        "order": 7,
+        "width": 10,
+        "height": 7,
+        "label": "2023每月降水量",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1360,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "504141ec48d4f90a",
+        "type": "ui_webcam",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "97d6f0d97930f465",
+        "order": 1,
+        "width": 30,
+        "height": 14,
+        "countdown": false,
+        "autoStart": false,
+        "hideCaptureButton": false,
+        "showImage": "2",
+        "mirror": true,
+        "format": "png",
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "f27c3f9a6ec64500"
+            ]
+        ]
+    },
+    {
+        "id": "08a2e6e18486028c",
+        "type": "http request",
+        "z": "5db642778b80666c",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://opendata.cwa.gov.tw/api/v1/rest/datastore/O-A0001-001?Authorization=CWA-09FBFB85-659A-4A8B-B4FF-B1B275A6F8A1&limit=10&StationId=C0AC70&GeoInfo=CountyName",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "33c718caeef2f9f9"
+            ]
+        ]
+    },
+    {
+        "id": "33c718caeef2f9f9",
+        "type": "json",
+        "z": "5db642778b80666c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 120,
+        "wires": [
+            [
+                "291087df448aa312"
+            ]
+        ]
+    },
+    {
+        "id": "291087df448aa312",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "function 11",
+        "func": "// 输入消息包含 JSON 数据\nvar inputData = msg.payload;\n\n// 检查输入数据是否不为空\nif (inputData && inputData.records && inputData.records.Station && inputData.records.Station.length > 0) {\n    // 从第一个站点中提取数据（假设记录中至少有一个站点）\n    var stationData = inputData.records.Station[0];\n\n    // 检查是否存在 WeatherElement\n    if (stationData.WeatherElement) {\n        // 提取当前温度\n        var currentTemperature = stationData.WeatherElement.AirTemperature;\n\n        // 检查是否存在 DailyExtreme\n        if (stationData.WeatherElement.DailyExtreme) {\n            // 提取 DailyHigh 中的 AirTemperature 记录\n            var dailyHighTemperature = stationData.WeatherElement.DailyExtreme.DailyHigh.TemperatureInfo.AirTemperature;\n\n            // 提取 DailyLow 中的 AirTemperature 记录\n            var dailyLowTemperature = stationData.WeatherElement.DailyExtreme.DailyLow.TemperatureInfo.AirTemperature;\n\n            // 创建包含提取数据的对象\n            var extractedData = {\n                DailyLowTemperature: dailyLowTemperature,\n                DailyHighTemperature: dailyHighTemperature,\n                CurrentTemperature: currentTemperature\n            };\n\n            // 将提取的数据设置为输出消息的负载\n            msg.payload = extractedData;\n\n            // 返回修改后的消息对象\n            return msg;\n        }\n    }\n}\n\n// 如果未找到符合条件的数据，则返回空消息\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 120,
+        "wires": [
+            [
+                "68a933b32d7a35b9"
+            ]
+        ]
+    },
+    {
+        "id": "68a933b32d7a35b9",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "function 12",
+        "func": "// 输入消息包含提取的温度数据\nvar extractedData = msg.payload;\n\n// 检查提取的数据是否不为空\nif (extractedData) {\n    // 创建一个数组用于存放温度数据\n    var temperaturesArray = [];\n\n    // 将提取的数据放入数组中\n    temperaturesArray.push(extractedData.DailyLowTemperature);\n    temperaturesArray.push(extractedData.DailyHighTemperature);\n    temperaturesArray.push(extractedData.CurrentTemperature);\n\n    // 将数组放入消息负载\n    msg.payload = temperaturesArray;\n\n    // 返回修改后的消息对象\n    return msg;\n}\n\n// 如果提取的数据为空，则返回空消息\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 120,
+        "wires": [
+            [
+                "f9deeca95a839cc1"
+            ]
+        ]
+    },
+    {
+        "id": "f9deeca95a839cc1",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "function 13",
+        "func": "var m = {};\n\nm.labels = [\"6:00\",\"15:00\",\"20:00\"];\nm.series = [\" \"];\nm.data = msg.payload;\n\nreturn { payload: [m] };",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 120,
+        "wires": [
+            [
+                "c605471f1a645b1e"
+            ]
+        ]
+    },
+    {
+        "id": "c605471f1a645b1e",
+        "type": "ui_chart",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "97d6f0d97930f465",
+        "order": 6,
+        "width": 10,
+        "height": 7,
+        "label": "溫度",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1210,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e9e48708754fb68",
+        "type": "file in",
+        "z": "5db642778b80666c",
+        "name": "",
+        "filename": "response_1703746180124.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 350,
+        "y": 60,
+        "wires": [
+            [
+                "54aba25c97a6aaf4"
+            ]
+        ]
+    },
+    {
+        "id": "f27c3f9a6ec64500",
+        "type": "image",
+        "z": "5db642778b80666c",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 340,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f8f596d345080e86",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "取得空氣溫度",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 520,
+        "wires": [
+            [
+                "be37d89db1152f29",
+                "23559093b4d6907c"
+            ]
+        ]
+    },
+    {
+        "id": "ea9a7e9af9169b47",
+        "type": "mqtt in",
+        "z": "5db642778b80666c",
+        "name": "",
+        "topic": "ntub/jacobian/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e7d55c918d7aac61",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 480,
+        "wires": [
+            [
+                "bf123d67e58c708b"
+            ]
+        ]
+    },
+    {
+        "id": "bf123d67e58c708b",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "存到全域",
+        "func": "// 先把儲存 data 於全域變數\nglobal.set(\"data\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 480,
+        "wires": [
+            [
+                "d05918d751568e89",
+                "f62d3a446b2e33b0",
+                "f8f596d345080e86",
+                "9e50a1e2eacfb093",
+                "850aaad1c7115069",
+                "b85c4c3fb24b3572",
+                "b02454932fb384ee",
+                "3403c110f0707340",
+                "89ca9cc4cb786a07"
+            ]
+        ]
+    },
+    {
+        "id": "d05918d751568e89",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "取得水位百分比",
+        "func": "// 水位百分比傳給後面流程使用\nmsg.payload = msg.payload.water_level_percentage;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 280,
+        "wires": [
+            [
+                "8353c8e0358f0269",
+                "2520b8cc927e54b2"
+            ]
+        ]
+    },
+    {
+        "id": "850aaad1c7115069",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "設定水位過低的發送頻率(避免queue)",
+        "func": "var water_level = msg.payload.water_level_cm;\n\nvar now = new Date();\nvar lastNotifyTime = global.get(\"lastNotifyWaterLevelTime\") || new Date(0);  // 獲取上次通知時間\n\nif (now.getTime() - lastNotifyTime.getTime() > 70000) {  // 檢查是否已經過去30秒\n    if (water_level < 1) {\n        global.set(\"lastNotifyWaterLevelTime\", now);  // 更新上次通知時間\n        return { payload: \"水位小於1CM，請加水：\" + water_level + \"CM\" };  \n    }\n} \n\nreturn null; \n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 340,
+        "wires": [
+            [
+                "96d62614c3580f2d"
+            ]
+        ]
+    },
+    {
+        "id": "f62d3a446b2e33b0",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "取得土壤濕度",
+        "func": "msg.payload = msg.payload.soil_moisture;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 460,
+        "wires": [
+            [
+                "1e47365eefcfe93e",
+                "0967d8447d706a99"
+            ]
+        ]
+    },
+    {
+        "id": "9e50a1e2eacfb093",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "取得空氣濕度",
+        "func": "msg.payload = msg.payload.humidity;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 580,
+        "wires": [
+            [
+                "0be6c01fcb5b6bec",
+                "7d8332fc5cd3f402"
+            ]
+        ]
+    },
+    {
+        "id": "8353c8e0358f0269",
+        "type": "ui_gauge",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "97d6f0d97930f465",
+        "order": 13,
+        "width": 10,
+        "height": 7,
+        "gtype": "wave",
+        "title": "水位高低(百分比)",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1030,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1e47365eefcfe93e",
+        "type": "ui_gauge",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "97d6f0d97930f465",
+        "order": 15,
+        "width": 10,
+        "height": 7,
+        "gtype": "wave",
+        "title": "土壤濕度",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1100,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "be37d89db1152f29",
+        "type": "ui_gauge",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "97d6f0d97930f465",
+        "order": 17,
+        "width": 10,
+        "height": 7,
+        "gtype": "compass",
+        "title": "目前空氣溫度",
+        "label": "C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1120,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "0be6c01fcb5b6bec",
+        "type": "ui_gauge",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "97d6f0d97930f465",
+        "order": 18,
+        "width": 10,
+        "height": 7,
+        "gtype": "wave",
+        "title": "目前空氣濕度",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1140,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "4892ff2939bb6ce2",
+        "type": "mqtt out",
+        "z": "5db642778b80666c",
+        "name": "",
+        "topic": "ntub/jacobian/command",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e7d55c918d7aac61",
+        "x": 310,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "d2a08aaa950ace5b",
+        "type": "ui_template",
+        "z": "5db642778b80666c",
+        "group": "97d6f0d97930f465",
+        "name": "盆栽置放處下雨狀態",
+        "order": 8,
+        "width": 10,
+        "height": 7,
+        "format": "<img src=\"data:image/jpeg;base64,{{msg.payload}}\" style=\"width: 360px; height: 360px;\">\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1340,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e879bd8c7c064b27",
+        "type": "file in",
+        "z": "5db642778b80666c",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "base64",
+        "allProps": false,
+        "x": 1140,
+        "y": 740,
+        "wires": [
+            [
+                "d2a08aaa950ace5b"
+            ]
+        ]
+    },
+    {
+        "id": "2f19b6c188615024",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "下雨狀態的圖片顯示",
+        "func": "if(msg.payload >= 4000){\n    msg.filename = \"D:\\ESPHome\\\\sun.png\";\n} else if(msg.payload >= 3800){\n    msg.filename = \"D:\\ESPHome\\\\rain.png\"\n} else {\n    msg.filename = \"D:\\ESPHome\\\\heavy_rain.png\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 740,
+        "wires": [
+            [
+                "e879bd8c7c064b27",
+                "323c49b12f308a59"
+            ]
+        ]
+    },
+    {
+        "id": "dc116cbc498b58fe",
+        "type": "ui_switch",
+        "z": "5db642778b80666c",
+        "name": "",
+        "label": "水泵開關",
+        "tooltip": "",
+        "group": "97d6f0d97930f465",
+        "order": 11,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "{\"pump\":\"on\"}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"pump\":\"off\"}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 100,
+        "y": 760,
+        "wires": [
+            [
+                "4892ff2939bb6ce2"
+            ]
+        ]
+    },
+    {
+        "id": "84531efb28feedaa",
+        "type": "ui_text",
+        "z": "5db642778b80666c",
+        "group": "97d6f0d97930f465",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "盆栽置放處下雨狀態",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1340,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "b85c4c3fb24b3572",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "取得下雨狀態",
+        "func": "msg.payload = msg.payload.rain_drop;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 740,
+        "wires": [
+            [
+                "2f19b6c188615024"
+            ]
+        ]
+    },
+    {
+        "id": "b02454932fb384ee",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "取得光亮",
+        "func": "msg.payload = msg.payload.light_percentage;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 620,
+        "wires": [
+            [
+                "9d81f9beabe25d65"
+            ]
+        ]
+    },
+    {
+        "id": "9d81f9beabe25d65",
+        "type": "ui_chart",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "6b0aee54c2d10d97",
+        "order": 31,
+        "width": 9,
+        "height": 6,
+        "label": "光亮",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1150,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2520b8cc927e54b2",
+        "type": "ui_chart",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "6b0aee54c2d10d97",
+        "order": 1,
+        "width": 9,
+        "height": 6,
+        "label": "水位高低(百分比)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1030,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0967d8447d706a99",
+        "type": "ui_chart",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "6b0aee54c2d10d97",
+        "order": 3,
+        "width": 9,
+        "height": 6,
+        "label": "土壤濕度",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1100,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23559093b4d6907c",
+        "type": "ui_chart",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "6b0aee54c2d10d97",
+        "order": 16,
+        "width": 9,
+        "height": 6,
+        "label": "目前空氣溫度",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "40",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1140,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d8332fc5cd3f402",
+        "type": "ui_chart",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "6b0aee54c2d10d97",
+        "order": 18,
+        "width": 9,
+        "height": 6,
+        "label": "目前空氣濕度",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1160,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7312099486cfef05",
+        "type": "ui_chart",
+        "z": "5db642778b80666c",
+        "name": "",
+        "group": "97d6f0d97930f465",
+        "order": 14,
+        "width": 10,
+        "height": 7,
+        "label": "水位",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "3.5",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1150,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3403c110f0707340",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "取得水位公分",
+        "func": "msg.payload = msg.payload.water_level_cm;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 680,
+        "wires": [
+            [
+                "7312099486cfef05"
+            ]
+        ]
+    },
+    {
+        "id": "89ca9cc4cb786a07",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "設定盆栽資訊的發送頻率(避免queue)",
+        "func": "var now = new Date();\nvar lastNotifyTime = global.get(\"lastNotifyInfoTime\") || new Date(0);  // 獲取上次通知時間\n\nif (now.getTime() - lastNotifyTime.getTime() > 20000) {  // 檢查是否已經過去15秒\n    var data = msg.payload;\n    global.set(\"lastNotifyInfoTime\", now);  // 更新上次通知時間\n\n    // 判斷下雨狀態\n    var rainStatus;\n    if (data.rain_drop >= 4000) {\n        rainStatus = \"沒有雨\";\n    } else if (data.rain_drop >= 3800) {\n        rainStatus = \"小雨\";\n    } else {\n        rainStatus = \"下大雨\";\n    }\n\n    return {\n        payload:\n            \"溫度：\" + data.temperature + \"C\\n\" +\n            \"濕度百分比：\" + data.humidity + \"%\\n\" +\n            \"水位高度：\" + data.water_level_cm + \"CM\\n\" +\n            \"水位高度百分比：\" + data.water_level_percentage + \"%\\n\" +\n            \"土壤溼度百分比：\" + data.soil_moisture + \"%\\n\" +\n            \"下雨狀態：\" + rainStatus + \"\\n\" +\n            \"光源強度：\" + data.light_percentage\n    };\n}\n\nreturn null; \n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 400,
+        "wires": [
+            [
+                "5266e03fd3228621"
+            ]
+        ]
+    },
+    {
+        "id": "850b803cbe368e56",
+        "type": "ui_template",
+        "z": "5db642778b80666c",
+        "group": "9ad87b60da9b5a62",
+        "name": "windy圖",
+        "order": 1,
+        "width": 20,
+        "height": 9,
+        "format": "<iframe width=\"650\" height=\"450\"\n    src=\"https://embed.windy.com/embed2.html?lat=23.929&lon=121.241&detailLat=23.929&detailLon=121.241&width=650&height=450&zoom=7&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1\"\n    frameborder=\"0\"></iframe>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 220,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96d62614c3580f2d",
+        "type": "line_notify_api",
+        "z": "5db642778b80666c",
+        "name": "Jacobian",
+        "accessToken": "0nODXpwg2Kl6kmjwvxJHihbO7i7xtGtxEaWXdhDU1AB",
+        "stickerPackageId": "",
+        "stickerId": "",
+        "x": 1040,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5266e03fd3228621",
+        "type": "line_notify_api",
+        "z": "5db642778b80666c",
+        "name": "Jacobian",
+        "accessToken": "0nODXpwg2Kl6kmjwvxJHihbO7i7xtGtxEaWXdhDU1AB",
+        "stickerPackageId": "",
+        "stickerId": "",
+        "x": 1060,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f671eff09de17256",
+        "type": "ui_template",
+        "z": "5db642778b80666c",
+        "group": "e739bc9917551fa8",
+        "name": "",
+        "order": 1,
+        "width": 20,
+        "height": 10,
+        "format": "<iframe width=\"1000\" height=\"650\" src=\"https://events.ettoday.net/weather-iframe/mobile/iframe-md.phtml\"></frame>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 240,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b388dd5ba925ac22",
+        "type": "debug",
+        "z": "5db642778b80666c",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d014617174605bfc",
+        "type": "debug",
+        "z": "5db642778b80666c",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ce68023c598efdd6",
+        "type": "mqtt in",
+        "z": "5db642778b80666c",
+        "name": "",
+        "topic": "owntracks/jacobian/final",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6635dd69cdedd6a3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 860,
+        "wires": [
+            [
+                "fbbfe166fcb6e1af",
+                "7969f38f9dfdd826"
+            ]
+        ]
+    },
+    {
+        "id": "fbbfe166fcb6e1af",
+        "type": "function",
+        "z": "5db642778b80666c",
+        "name": "function 15",
+        "func": "var newPayload = {\n    name: \"我的位置\",\n    lat: msg.payload.lat,\n    lon: msg.payload.lon,\n    icon: \"fa-male\",\n    iconSize: 100\n};\n\n// 將新的 payload 設置到 msg 對象中\nmsg.payload = newPayload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 860,
+        "wires": [
+            [
+                "a1e4592f4f0d2114",
+                "1b118c456d946993"
+            ]
+        ]
+    },
+    {
+        "id": "7969f38f9dfdd826",
+        "type": "debug",
+        "z": "5db642778b80666c",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "a1e4592f4f0d2114",
+        "type": "ui_worldmap",
+        "z": "5db642778b80666c",
+        "group": "9ad87b60da9b5a62",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 620,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "323c49b12f308a59",
+        "type": "debug",
+        "z": "5db642778b80666c",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "1b118c456d946993",
+        "type": "debug",
+        "z": "5db642778b80666c",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 940,
+        "wires": []
+    }
+]

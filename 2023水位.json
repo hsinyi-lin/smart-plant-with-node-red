@@ -1,0 +1,106 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "C-B0025-001",
+    "fields": [
+      {
+        "id": "StationID",
+        "type": "String"
+      },
+      {
+        "id": "StationName",
+        "type": "String"
+      },
+      {
+        "id": "StationNameEN",
+        "type": "String"
+      },
+      {
+        "id": "StationAttribute",
+        "type": "String"
+      },
+      {
+        "id": "Date",
+        "type": "String"
+      },
+      {
+        "id": "Precipitation",
+        "type": "String"
+      },
+      {
+        "id": "YearMonth",
+        "type": "String"
+      },
+      {
+        "id": "Total",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "location": [
+      {
+        "station": {
+          "StationID": "466920",
+          "StationName": "臺北",
+          "StationNameEN": "TAIPEI",
+          "StationAttribute": "署屬有人氣象站"
+        },
+        "stationObsStatistics": {
+          "Precipitation": {
+            "monthly": [
+              {
+                "YearMonth": "2023-01",
+                "Total": "28.0"
+              },
+              {
+                "YearMonth": "2023-02",
+                "Total": "37.5"
+              },
+              {
+                "YearMonth": "2023-03",
+                "Total": "23.5"
+              },
+              {
+                "YearMonth": "2023-04",
+                "Total": "109.5"
+              },
+              {
+                "YearMonth": "2023-05",
+                "Total": "182.5"
+              },
+              {
+                "YearMonth": "2023-06",
+                "Total": "482.0"
+              },
+              {
+                "YearMonth": "2023-07",
+                "Total": "119.0"
+              },
+              {
+                "YearMonth": "2023-08",
+                "Total": "459.5"
+              },
+              {
+                "YearMonth": "2023-09",
+                "Total": "153.0"
+              },
+              {
+                "YearMonth": "2023-10",
+                "Total": "87.0"
+              },
+              {
+                "YearMonth": "2023-11",
+                "Total": "17.0"
+              },
+              {
+                "YearMonth": "2023-12",
+                "Total": "82.0"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
